@@ -1,0 +1,8 @@
+<div style="display: flex; gap: 20px; margin: 20px 30px;">
+    <input type="checkbox" [(ngModel)] = 'isComp'>
+    <input type="text" placeholder="Type and Add to yout todo" [(ngModel)] = 'task'>
+    <input type="checkbox" [(ngModel)] = 'isfav' >
+    <input type="date" [(ngModel)] = 'dueDate'[min]="today">
+    <button type="submit" (click)="addTask()" [disabled]="(task.trim().length==0)">+ Add</button>
+    <small>{{ErrorMsg}}</small>
+</div>

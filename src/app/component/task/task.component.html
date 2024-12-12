@@ -1,0 +1,8 @@
+<div class="" style="margin: 10px; padding: 10px;border: 1px solid; border-radius: 20px;">
+    Completed ? <input [(ngModel)]="task.isCompleted" type="checkbox">
+    <p>{{task.cont}}</p>
+    <p>{{task.date | date : 'MMM d'}}</p>
+    Fav ? <input [(ngModel)]="task.isfavourite" type="checkbox">
+    <br>
+    <button (click)="delTask()">Delete</button>
+</div>
